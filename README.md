@@ -1,7 +1,7 @@
 How to Run Locally
 1. Clone the Repository
    ```
-   git clone https://github.com/username/password-manager.git
+   git clone https://github.com/NofaAnggunFebriyani/crud-flask-password-manager.git
     cd password-manager
    ```
 2. Create a Virtual Environment
