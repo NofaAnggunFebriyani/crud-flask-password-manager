@@ -11,7 +11,7 @@ How to Run Locally
 3. Activate the Virtual Environment
    windows
    ```
-   venv\Scripts\activate
+   env\Scripts\activate
    ```
    Mac/Linux
    ```
