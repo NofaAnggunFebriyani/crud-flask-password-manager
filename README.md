@@ -1,19 +1,33 @@
-<h1> FlaskApp directory </h1>
-    /yourapp  
-        /run.py  
-        /config.py  
-        /app  
-            /__init__.py
-            /views.py  
-            /models.py  
-            /static/  
-                /main.css
-            /templates/  
-                /base.html  
-        /requirements.txt  
-        /yourappenv
+How to Run Locally
+1. Clone the Repository
+   ```
+   git clone https://github.com/username/password-manager.git
+    cd password-manager
+   ```
+2. Create a Virtual Environment
+   ```
+   python -m venv env
+   ```
+3. Activate the Virtual Environment
+   windows
+   ```
+   venv\Scripts\activate
+   ```
+   Mac/Linux
+   ```
+   source venv/bin/activate
+   ```
+4. Install Dependencies
+   ```
+   pip install -r requirements.txt
+   ```
+5. Run the App
+   ```
+   flask run --debug
+   ```
 
-
+Author 
+nofaagnfeb@gmail.com
 
 
 
