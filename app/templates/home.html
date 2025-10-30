@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>Welcome to my App, Password Manager</h1>
+    <p>
+        Come on, save your password here so you don't forget it.
+    </p>
+    <button type="button" class="btn btn-primary">
+        <a href="{{url_for('AddPlatform')}}">
+            STARTED
+        </a>
+    </button>
+</div>
+    
+{% endblock %}

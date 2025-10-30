@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+<title>Add Platform</title>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <form method="POST" class="form-add">
+        <h1>Add Your Platform</h1>
+        <br>
+        <!-- Platform -->
+        {{ form.Platform.label() }}
+        {{ form.Platform(class='form-control', placeholder='Platform')}}
+        <!-- Email -->
+        {{ form.Email.label() }}
+        {{ form.Email(class='form-control', placeholder='Email')}}
+        <!-- Password -->
+        {{ form.Password.label() }}
+        {{ form.Password(class='form-control', placeholder='Password')}}
+        <br>
+
+        {{ form.Submit(class='btn btn-lg btn-block btn-primary')}}
+    </form>
+</div>
+{% endblock %}

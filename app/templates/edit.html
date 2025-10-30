@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+<title>Edit</title>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <form method="POST" class="form-add">
+        {{ form.hidden_tag() }}
+        <h1>Edit your data</h1>
+        <br>
+        <!-- Platform -->
+        {{ form.Platform.label() }}
+        {{ form.Platform(class='form-control', placeholder='Platform')}}
+        <!-- Email -->
+        {{ form.Email.label() }}
+        {{ form.Email(class='form-control', placeholder='Email')}}
+        <!-- Password -->
+        {{ form.Password.label() }}
+        {{ form.Password(class='form-control', placeholder='Password')}}
+        <br>
+        <input type="submit" value="Update" class="update">
+    </form>
+</div>
+{% endblock %}

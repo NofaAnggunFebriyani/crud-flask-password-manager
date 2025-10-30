@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>List of Platform</title>
+{%endblock%}
+
+{% block body %}
+
+<div class="container" >
+    <h1>List Of Your Platform</h1>
+    <table style="border: 1px solid" class="view">
+    <tr>
+        <th>Platform</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Manage</th>
+    </tr>
+    <!-- sesuai dengan fungsi viewPlatform -->
+    {% for form in platforms %}
+    <tr>
+    <!-- sesuai dengan nama yang dikirim di fungsi addPlatform -->
+        <td>{{ form.Platform }}</td>
+        <td>{{ form.Email }}</td>
+        <td>{{ form.Password }}</td>
+        <td>
+            <a href="{{ url_for('delete', id=form.id)}}">Delete</a>
+            <br>
+            <a href="{{url_for('edit', id=form.id)}}">Edit</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+<br>
+<button type="button" class="btn btn-primary">
+    <a href="{{url_for('AddPlatform')}}">
+        Add New
+    </a>
+</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

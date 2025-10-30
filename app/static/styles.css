@@ -1,0 +1,106 @@
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #016B61;
+  color: #E5E9C5;
+}
+body .navbar {
+  background-color: #016B61 !important;
+}
+body .navbar .navbar-brand {
+  color: #E5E9C5;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+body .navbar #navbarNavAltMarkup {
+  justify-content: flex-end;
+}
+body .navbar .nav-link {
+  color: #E5E9C5;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 10px;
+  transition: letter-spacing 0.3s ease;
+}
+body .navbar .nav-link:hover {
+  color: white;
+}
+body .navbar-toggler {
+  background-color: #E5E9C5;
+}
+body .navbar-toggler:hover {
+  border-color: #9ECFD4 !important;
+}
+
+/* Table & Layout Styling */
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+.container h1 {
+  margin-bottom: 30px;
+  color: #E5E9C5;
+  text-transform: uppercase;
+}
+.container table.view {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  background-color: rgb(1.4722222222, 157.5277777778, 142.8055555556);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.container table.view th, .container table.view td {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 12px 15px;
+  text-align: center;
+}
+.container table.view th {
+  background-color: #4F959D;
+  color: #E5E9C5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.container table.view tr:nth-child(even) {
+  background-color: rgb(1.9444444444, 208.0555555556, 188.6111111111);
+}
+.container table.view tr:hover {
+  background-color: #70B2B2;
+  color: white;
+}
+.container table.view a {
+  color: #E5E9C5;
+  text-decoration: none;
+  font-weight: bold;
+}
+.container table.view a:hover {
+  color: white;
+}
+.container .btn, .container .update {
+  background-color: #4F959D;
+  border-color: #9ECFD4;
+  color: #E5E9C5;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.container .btn:hover, .container .update:hover {
+  background-color: #70B2B2;
+}
+.container .btn:active, .container .update:active {
+  background-color: rgb(61.9279661017, 116.8008474576, 123.0720338983);
+}
+.container .btn a, .container .update a {
+  color: #E5E9C5;
+  text-decoration: none;
+}
+.container .btn a:hover, .container .update a:hover {
+  color: white;
+}/*# sourceMappingURL=styles.css.map */
